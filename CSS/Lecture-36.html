@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframaes and Animation</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+
+        .box{
+            background-color: blue;
+            height: 250px;
+            width: 250px;
+
+            /* Animation codes strats from here  */
+            position: relative;
+            animation-name: masum;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            /* animation-fill-mode: alternate;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-direction: reverse; */
+
+            /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: masum 5s ease-in 1s 12 backwards; */
+        }
+
+        @keyframes masum{
+            25%{
+                top: 200px;
+                border: 2px solid red;
+                border-radius: 9px;
+                box-shadow: 6px 7px 8px red;
+            }
+            50%{
+                top: 100px;
+                left:100px;
+                border: 2px solid black;
+                border-radius: 9px;
+                box-shadow: 6px 7px 8px rgb(0, 255, 208);
+            }
+            70%{
+                top: 100px;
+                left:200px;
+                border: 2px solid white;
+                border-radius: 9px;
+                box-shadow: 6px 7px 8px rgb(1, 18, 15);
+            }
+            90%{
+                top: 0px;
+                left:200px;
+                border: 2px solid white;
+                border-radius: 9px;
+                box-shadow: 6px 7px 8px rgb(1, 18, 15);
+
+            }
+            100%{
+                top: 0px;
+                border: 2px solid red;
+                border-radius: 9px;
+                box-shadow: 6px 7px 8px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box.
+        </div>
+    </div>
+</body>
+</html>

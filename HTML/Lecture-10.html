@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ids and classes in html</title>
+    <style>
+        #box {
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+
+        .circle {
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ID>> The ID is an identifier which must be unique in the whole HTML document. It is used to find an element while linking, scripting, or styling. ID is denoted by hash ‘#’. -->
+
+    <div id="box">
+        This is a box.
+    </div>
+
+    <!-- Classes>> classes should not be unique. we can apply same class in different element, Classes are denoted by a dot ‘.’  -->
+    <div class="circle">
+        This is a circle
+    </div>
+    <div class="circle">
+        This is a circle
+    </div>
+</body>
+
+</html>

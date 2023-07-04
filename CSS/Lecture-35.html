@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & custom properties</title>
+    <style>
+        :root{
+            --safe:yellow;
+            --danger:red;
+            --proceed:green;
+            --curve:2px solid black;
+        }
+
+        .container{
+            display: flex;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 2px 9px;
+        }
+
+        /* variables are two types 1)Local Variable 2)Global Variable  */
+
+        /* local variable */
+        .box{
+            /* --mango: orange;
+            background-color: var(--mango); */
+            /* border: 2px solid var(--mango); */
+            /* box-shadow: 20px 10px 7px var(--mango); */
+        }
+
+        /* Global variable */
+        .box{
+            background-color: var(--danger);
+            border:var(--curve);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

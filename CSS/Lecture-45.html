@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid is a powerful tool for creating a reponsive websites</title>
+    <style>
+        #navbar {
+            grid-area: navbar;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        #one {
+            grid-area: one;
+            border: 2px solid red;
+            background-color: rgb(186, 140, 229);
+
+        }
+
+        #two {
+            grid-area: two;
+            border: 2px solid black;
+            background-color: burlywood;
+        }
+
+        #aside {
+            grid-area: aside;
+            border: 2px solid red;
+            background-color: rgb(235, 168, 235);
+        }
+
+        footer {
+            grid-area: footer;
+            border: 2px solid black;
+            background-color: rgb(202, 233, 171);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aqua;
+        }
+
+        #container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'one one one one'
+                'two two two aside'
+                'footer footer footer footer'
+            ;
+        }
+        /* .uncmn{
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: yellow;
+        } */
+        @media(max-width:400px){
+            h1{
+                font-size: 15px;
+            }
+            p{
+                font-size: 10px;
+            }
+            #navbar{
+                font-size: 14px;
+            }
+        }
+        @media(max-width:800px){
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 13px;
+            }
+            #navbar{
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav id="navbar">
+            Home About Services Contact-Us
+        </nav>
+        <div id="one">
+            <h1>this is Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam laborum magni, in deleniti officiis
+                quod nam maiores cum amet consequuntur reprehenderit tenetur quo adipisci, architecto totam, dignissimos
+                similique labore quia.</p>
+        </div>
+        <div id="two">
+            <h1>Welcome to coding world</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis modi possimus asperiores. Cumque ab
+                perferendis ex laudantium? Ea excepturi veniam, rem fugiat iusto temporibus corporis. Ullam incidunt
+                fuga quam enim.</p>
+                <!-- <div class="un-1 uncmn">box 1</div>
+                <div class="un-2 uncmn">box 2</div>
+                <div class="un-3 uncmn">box 3</div> -->
+        </div>
+
+        <div id="aside">
+            <h1>this is aside</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, molestias. Iste necessitatibus assumenda,
+                expedita incidunt, eos laboriosam cumque pariatur laborum atque in labore. Officiis, facilis repellendus
+                vitae totam voluptatibus hic!</p>
+        </div>
+        <footer> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, repellat.</p></footer>
+        
+    </div>
+</body>
+
+</html>

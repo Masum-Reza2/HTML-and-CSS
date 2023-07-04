@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+    <!-- here inside the Head we have to insert external CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inl{
+            /* here we are going to use internal css */
+            border: 2px solid black;
+            border-radius: 7px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Priority power randomly look like this>>> Inline>Internal>External -->
+
+    <!-- inline CSS -->
+    <h1 style="color: blue; border: 2px solid red;">Inline CSS</h1>
+    <p style="border: 2px solid blue;">In this para we used inline CSS to design</p>
+
+    <!-- internal CSS -->
+    <h1 class="inl">In this section we are going to use internal CSS</h1>
+    <p class="inl">internal CSS Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio dolorum blanditiis quas officia. Ut quisquam optio mollitia animi omnis.</p>
+
+    <!-- External CSS  -->
+    <h1 class="exnl">Here i will apply external css</h1>
+    <p class="exnl">External css is Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae nesciunt iure ea ut tempore neque obcaecati a dignissimos iste cupiditate?</p>
+</body>
+</html>

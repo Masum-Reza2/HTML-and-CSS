@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility And z-index</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: red;
+            /* visibility: hidden; */
+            /* Visibility property is used to hide or show an HTML element without changing the layout of the page. 
+            The hidden element uses the space on the page because it is still there, but it is not visible to the user.*/
+        }
+        #box2{
+            background-color: greenyellow;
+            /* display: none; */
+            /* display:none; - It completely removes an HTML tag from the web page like it was never there */
+        }
+        #box3{
+            background-color: orange;
+            /* Z-index does not work on static position value. It only works on the elements with position: relative, absolute, fixed, or sticky */
+            position: relative;
+            top: 60px;
+            z-index: -1;
+            /* higher value of z-index will allow it to forcely display it properly */
+        }
+        #box4{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">firstBox</div>
+    <div class="box" id="box2">SecondBox</div>
+    <div class="box" id="box3">ThirdBox</div>
+    <div class="box" id="box4">FourthBox</div>
+</body>
+</html>

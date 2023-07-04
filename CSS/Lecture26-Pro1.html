@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left {
+            display: inline-block;
+            border: 2px solid black;
+            margin-top: 0px;
+            position: absolute;
+        }
+
+        .mid {
+            display: block;
+            width: 30%;
+            margin: auto;
+            border: 2px solid black;
+
+        }
+
+        .right {
+            border: 2px solid black;
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        img {
+            width: 60px;
+            margin-left: 12px;
+            filter: invert(100%);
+        }
+
+        #navbar {
+            background-color: blue;
+            margin-top: 30px;
+        }
+
+        #navbar li {
+            float: left;
+            list-style: none;
+        }
+
+        a {
+            border: 2px solid #f1eaea;
+            margin: 8px 6px;
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: black;
+            color: aqua;
+        }
+
+        a:hover {
+            color: orange;
+            background-color: rgb(74, 12, 12);
+            border: 2px solid red;
+        }
+
+        body {
+            background-image: url('/images/behind.jpg');
+            background-size: 100%;
+        }
+
+        .btn {
+            border: 2px solid red;
+            margin-top: 30px;
+            margin: 33px 5px;
+            border-radius: 6px;
+            background-color: #a8e6e6;
+            color: grey;
+            padding: 4px 14px;
+        }
+
+        .form {
+            margin-top: 100px;
+            padding: 0;
+            /* border: 2px solid red; */
+        }
+
+        .form input {
+            padding: 4px 5px;
+            border: 2px solid blue;
+            display: block;
+            width: 50%;
+            margin: 11px auto;
+            border-radius: 9px;
+            text-align: center;
+            color: red;
+            background-color: black;
+        }
+
+        textarea {
+            border: 2px solid aquamarine;
+            background-color: initial;
+            display: block;
+            margin: auto;
+            text-align: center;
+            color: red;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="/images/logo.jpg" alt="">
+            <div style="color:red">Reza Fitness</div>
+        </div>
+
+        <div class="mid">
+            <nav id="navbar">
+                <ul>
+                    <li> <a href="">Home</a> </li>
+                    <li> <a href="">About Us</a> </li>
+                    <li> <a href="">Fitness Calc.</a> </li>
+                    <li> <a href="">Contact Us</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-Mail Us</button>
+        </div>
+    </header>
+
+    <div class="form">
+        <h1 style="color: red; text-align: center;">Join the best GYM of Delhi Now</h1>
+        <form class="myform" action="" method="post">
+            <div>
+                <input type="text" name="name" id="" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <input type="text" name="" id="" placeholder="Enter Your Address">
+            </div>
+            <div>
+                <input type="number" name="" id="" placeholder="Enter Your Phone Number">
+            </div>
+            <div>
+                <input type="email" name="" id="" placeholder="Enter Your E-Mail">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Enter Your Password">
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="More about You"></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model, Margin and padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: tan;
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 100vw;
+            height: 100vh;
+
+            /* margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px; */
+
+            margin: 10px 10px;
+            /* first value for top bottom and second value for left right  */
+            
+            /* padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px; */
+
+            padding: 10px 10px;
+            /* first value for top bottom and second value for left right  */
+        }
+    </style>
+</head>
+<body>
+    <!-- These parts can be explained as-
+
+    Content- The content of the box, where text and images appear.
+    Padding- It clears an area around the content. The padding is transparent.
+    Border- A border is one that covers the padding and content.
+    Margin- It clears an area outside the border. The margin is also transparent. -->
+
+    <div class="container">
+
+        <h2>This is Heading1</h2>
+        <p id="para1"></p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis ipsum? Incidunt deserunt voluptate fuga repellendus accusamus excepturi voluptatum eos.
+
+        <h2>This is Heading2</h2>
+        <p id="para2"></p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis ipsum? Incidunt deserunt voluptate fuga repellendus accusamus excepturi voluptatum eos.
+
+        <h2>This is Heading3</h2>
+        <p id="para3"></p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis ipsum? Incidunt deserunt voluptate fuga repellendus accusamus excepturi voluptatum eos.
+
+    </div>
+</body>
+</html>

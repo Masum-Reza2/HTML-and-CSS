@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        /* CSS transitions allow us to change property values smoothly, over a given duration. It provides a way to control animation speed when changing CSS properties. */
+
+        body {
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+
+            /* Transition short hand property in one line
+        transition: all 1s ease-in-out 2s; */
+
+            transition: all 1s ease-in-out .3s;
+        }
+
+        /* whenever an item is hovered we can make it possible to change it's from smoothly by using transition  */
+        #box:hover {
+            background-color: blueviolet;
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 80px;
+            font-size: 40px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            /* Green */
+            border: 2px solid white;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 9px;
+            margin-top: 5px;
+             transition-property: all;
+             transition-duration: 4s;
+             transition-timing-function: ease-in-out;
+             
+        }
+        .btn:hover{
+            background-color:blue;
+            /* Green */
+            border: 2px solid white;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 9px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Transition tutorial</h1>
+    <div id="box">
+        this is my box.
+    </div>
+    <input type="submit" value="Submit Now" class="btn">
+</body>
+
+</html>

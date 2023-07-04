@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 700px;
+            height: 300px;
+            background-color: rgb(191, 135, 244);
+            margin: 10px auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn{
+            border: 2px solid white;
+            border-radius: 7px;
+            margin: 4px 5px;
+            padding: 2px 3px;
+            color: greenyellow;
+            background-color: black;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: red;
+            border: 2px solid turquoise;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is heading on bla bla</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga exercitationem rerum corrupti ut autem veritatis est repellendus? Nisi, vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium porro dicta neque beatae quidem ad aliquam sint omnis nobis possimus eum qui quis voluptatem repellat temporibus est, corporis hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione illum beatae aut cumque at dolorum amet ipsam excepturi saepe eveniet consectetur, sunt minima tenetur neque deleniti adipisci quis quidem harum et? Magni assumenda natus sed. Aliquam, ullam. Molestias facilis est reiciendis quia expedita laborum ullam voluptates eius eum incidunt?</p>
+        <a href="http://google.com" target="_blank" rel="noopener noreferrer" class="btn">Goto Google</a>
+        <button class="btn">Submit Now</button>
+    </div>
+</body>
+</html>

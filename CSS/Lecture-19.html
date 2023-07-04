@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds in CSS</title>
+    <style>
+        #first{
+            background-color: red;
+            height: 200px;
+            width: 400px;
+            /* border-width: 2px;
+            border-color: green;
+            border-style: solid; */
+            /* border-right: 2px solid black;
+            border-left: 2px solid rgb(57, 6, 243);
+            border-top: 5px solid khaki;
+            border-bottom: 2px solid blue; */
+            border: 2px solid greenyellow;
+            border-radius: 9px;
+        }
+
+        #second{
+            height: 200px;
+            width: 400px;
+            background-color: blueviolet;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 39px;
+        }
+
+        #third{
+            height: 200px;
+            width: 400px;
+            background-image: url('/images/back.jpg');
+            background-size: 100%;
+            text-align: center;
+            /* background-repeat: no-repeat;
+            background-position: center center; */
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading1</h1>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis minima suscipit iste libero? Doloremque molestiae exercitationem dignissimos doloribus perspiciatis?</p>
+
+    <h1>This is Heading2</h1>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis minima suscipit iste libero? Doloremque molestiae exercitationem dignissimos doloribus perspiciatis?</p>
+
+    <h1>This is Heading3</h1>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis minima suscipit iste libero? Doloremque molestiae exercitationem dignissimos doloribus perspiciatis?</p>
+
+</body>
+</html>
